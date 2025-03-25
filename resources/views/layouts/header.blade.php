@@ -5,10 +5,10 @@
                 <nav class="navbar navbar-expand gap-3">
                     <div class="topbar-logo-header d-none d-lg-flex">
                         <div class="">
-                            <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                            <img src="assets/images/logo.jpg" class="logo-icon" style="height: 40px;" alt="logo icon">
                         </div>
                         <div class="">
-                            <h4 class="logo-text">Rocker</h4>
+                            <h4 class="logo-text">Marroquín & Solís</h4>
                         </div>
                     </div>
                     <div class="mobile-toggle-menu d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><i class='bx bx-menu'></i></div>
