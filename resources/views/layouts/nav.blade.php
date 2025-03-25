@@ -1,327 +1,226 @@
-<!--sidebar wrapper -->
-<div class="sidebar-wrapper" data-simplebar="true">
-            <div class="sidebar-header">
-                <div>
-                    <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-                </div>
-                <div>
-                    <h4 class="logo-text">Rocker</h4>
-                </div>
-                <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
-                </div>
-            </div>
-            <!--navigation-->
-            <ul class="metismenu" id="menu">
-                <li>
-                    <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class='bx bx-home-circle'></i>
+<div class="primary-menu">
+               <nav class="navbar navbar-expand-lg align-items-center">
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header border-bottom">
+                        <div class="d-flex align-items-center">
+                            <div class="">
+                                <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                            </div>
+                            <div class="">
+                                <h4 class="logo-text">Rocker</h4>
+                            </div>
                         </div>
-                        <div class="menu-title">Dashboard</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('index') }}"><i class="bx bx-right-arrow-alt"></i>Default</a>
-                        </li>
-                        <li> <a href="{{ url('dashboard-alternate') }}"><i class="bx bx-right-arrow-alt"></i>Alternate</a>
-                        </li>
-                        <li> <a href="{{ url('dashboard-analytics') }}"><i class="bx bx-right-arrow-alt"></i>Graphical</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class="bx bx-category"></i>
-                        </div>
-                        <div class="menu-title">Application</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('app-emailbox') }}"><i class="bx bx-right-arrow-alt"></i>Email</a>
-                        </li>
-                        <li> <a href="{{ url('app-chat-box') }}"><i class="bx bx-right-arrow-alt"></i>Chat Box</a>
-                        </li>
-                        <li> <a href="{{ url('app-file-manager') }}"><i class="bx bx-right-arrow-alt"></i>File Manager</a>
-                        </li>
-                        <li> <a href="{{ url('app-contact-list') }}"><i class="bx bx-right-arrow-alt"></i>Contatcs</a>
-                        </li>
-                        <li> <a href="{{ url('app-to-do') }}"><i class="bx bx-right-arrow-alt"></i>Todo List</a>
-                        </li>
-                        <li> <a href="{{ url('app-invoice') }}"><i class="bx bx-right-arrow-alt"></i>Invoice</a>
-                        </li>
-                        <li> <a href="{{ url('app-fullcalender') }}"><i class="bx bx-right-arrow-alt"></i>Calendar</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-label">UI Elements</li>
-                <li>
-                    <a href="{{ url('widgets') }}">
-                        <div class="parent-icon"><i class='bx bx-cookie'></i>
-                        </div>
-                        <div class="menu-title">Widgets</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="javascript:;" class="has-arrow">
-                        <div class="parent-icon"><i class='bx bx-cart'></i>
-                        </div>
-                        <div class="menu-title">eCommerce</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('ecommerce-products') }}"><i class="bx bx-right-arrow-alt"></i>Products</a>
-                        </li>
-                        <li> <a href="{{ url('ecommerce-products-details') }}"><i class="bx bx-right-arrow-alt"></i>Product Details</a>
-                        </li>
-                        <li> <a href="{{ url('ecommerce-add-new-products') }}"><i class="bx bx-right-arrow-alt"></i>Add New Products</a>
-                        </li>
-                        <li> <a href="{{ url('ecommerce-orders') }}"><i class="bx bx-right-arrow-alt"></i>Orders</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class='bx bx-bookmark-heart'></i>
-                        </div>
-                        <div class="menu-title">Components</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('component-alerts') }}"><i class="bx bx-right-arrow-alt"></i>Alerts</a>
-                        </li>
-                        <li> <a href="{{ url('component-accordions') }}"><i class="bx bx-right-arrow-alt"></i>Accordions</a>
-                        </li>
-                        <li> <a href="{{ url('component-badges') }}"><i class="bx bx-right-arrow-alt"></i>Badges</a>
-                        </li>
-                        <li> <a href="{{ url('component-buttons') }}"><i class="bx bx-right-arrow-alt"></i>Buttons</a>
-                        </li>
-                        <li> <a href="{{ url('component-cards') }}"><i class="bx bx-right-arrow-alt"></i>Cards</a>
-                        </li>
-                        <li> <a href="{{ url('component-carousels') }}"><i class="bx bx-right-arrow-alt"></i>Carousels</a>
-                        </li>
-                        <li> <a href="{{ url('component-list-groups') }}"><i class="bx bx-right-arrow-alt"></i>List Groups</a>
-                        </li>
-                        <li> <a href="{{ url('component-media-object') }}"><i class="bx bx-right-arrow-alt"></i>Media Objects</a>
-                        </li>
-                        <li> <a href="{{ url('component-modals') }}"><i class="bx bx-right-arrow-alt"></i>Modals</a>
-                        </li>
-                        <li> <a href="{{ url('component-navs-tabs') }}"><i class="bx bx-right-arrow-alt"></i>Navs & Tabs</a>
-                        </li>
-                        <li> <a href="{{ url('component-navbar') }}"><i class="bx bx-right-arrow-alt"></i>Navbar</a>
-                        </li>
-                        <li> <a href="{{ url('component-paginations') }}"><i class="bx bx-right-arrow-alt"></i>Pagination</a>
-                        </li>
-                        <li> <a href="{{ url('component-popovers-tooltips') }}"><i class="bx bx-right-arrow-alt"></i>Popovers & Tooltips</a>
-                        </li>
-                        <li> <a href="{{ url('component-progress-bars') }}"><i class="bx bx-right-arrow-alt"></i>Progress</a>
-                        </li>
-                        <li> <a href="{{ url('component-spinners') }}"><i class="bx bx-right-arrow-alt"></i>Spinners</a>
-                        </li>
-                        <li> <a href="{{ url('component-notifications') }}"><i class="bx bx-right-arrow-alt"></i>Notifications</a>
-                        </li>
-                        <li> <a href="{{ url('component-avtars-chips') }}"><i class="bx bx-right-arrow-alt"></i>Avatrs & Chips</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-repeat"></i>
-                        </div>
-                        <div class="menu-title">Content</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('content-grid-system') }}"><i class="bx bx-right-arrow-alt"></i>Grid System</a>
-                        </li>
-                        <li> <a href="{{ url('content-typography') }}"><i class="bx bx-right-arrow-alt"></i>Typography</a>
-                        </li>
-                        <li> <a href="{{ url('content-text-utilities') }}"><i class="bx bx-right-arrow-alt"></i>Text Utilities</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"> <i class="bx bx-donate-blood"></i>
-                        </div>
-                        <div class="menu-title">Icons</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('icons-line-icons') }}"><i class="bx bx-right-arrow-alt"></i>Line Icons</a>
-                        </li>
-                        <li> <a href="{{ url('icons-boxicons') }}"><i class="bx bx-right-arrow-alt"></i>Boxicons</a>
-                        </li>
-                        <li> <a href="{{ url('icons-feather-icons') }}"><i class="bx bx-right-arrow-alt"></i>Feather Icons</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-label">Forms & Tables</li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class='bx bx-message-square-edit'></i>
-                        </div>
-                        <div class="menu-title">Forms</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('form-elements') }}"><i class="bx bx-right-arrow-alt"></i>Form Elements</a>
-                        </li>
-                        <li> <a href="{{ url('form-input-group') }}"><i class="bx bx-right-arrow-alt"></i>Input Groups</a>
-                        </li>
-                        <li> <a href="{{ url('form-layouts') }}"><i class="bx bx-right-arrow-alt"></i>Forms Layouts</a>
-                        </li>
-                        <li> <a href="{{ url('form-validations') }}"><i class="bx bx-right-arrow-alt"></i>Form Validation</a>
-                        </li>
-                        <li> <a href="{{ url('form-wizard') }}"><i class="bx bx-right-arrow-alt"></i>Form Wizard</a>
-                        </li>
-                        <li> <a href="{{ url('form-text-editor') }}"><i class="bx bx-right-arrow-alt"></i>Text Editor</a>
-                        </li>
-                        <li> <a href="{{ url('form-file-upload') }}"><i class="bx bx-right-arrow-alt"></i>File Upload</a>
-                        </li>
-                        <li> <a href="{{ url('form-date-time-pickes') }}"><i class="bx bx-right-arrow-alt"></i>Date Pickers</a>
-                        </li>
-                        <li> <a href="{{ url('form-select2') }}"><i class="bx bx-right-arrow-alt"></i>Select2</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-grid-alt"></i>
-                        </div>
-                        <div class="menu-title">Tables</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('table-basic-table') }}"><i class="bx bx-right-arrow-alt"></i>Basic Table</a>
-                        </li>
-                        <li> <a href="{{ url('table-datatable') }}"><i class="bx bx-right-arrow-alt"></i>Data Table</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-label">Pages</li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-lock"></i>
-                        </div>
-                        <div class="menu-title">Authentication</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('authentication-signin') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-signup') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-signin-with-header-footer') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign In with Header & Footer</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-signup-with-header-footer') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Sign Up with Header & Footer</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-forgot-password') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Forgot Password</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-reset-password') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Reset Password</a>
-                        </li>
-                        <li> <a href="{{ url('authentication-lock-screen') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Lock Screen</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="{{ url('user-profile') }}">
-                        <div class="parent-icon"><i class="bx bx-user-circle"></i>
-                        </div>
-                        <div class="menu-title">User Profile</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url('timeline') }}">
-                        <div class="parent-icon"> <i class="bx bx-video-recording"></i>
-                        </div>
-                        <div class="menu-title">Timeline</div>
-                    </a>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-error"></i>
-                        </div>
-                        <div class="menu-title">Errors</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('errors-404-error') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>404 Error</a>
-                        </li>
-                        <li> <a href="{{ url('errors-500-error') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>500 Error</a>
-                        </li>
-                        <li> <a href="{{ url('errors-coming-soon') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Coming Soon</a>
-                        </li>
-                        <li> <a href="{{ url('error-blank-page') }}" target="_blank"><i class="bx bx-right-arrow-alt"></i>Blank Page</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="{{ url('faq') }}">
-                        <div class="parent-icon"><i class="bx bx-help-circle"></i>
-                        </div>
-                        <div class="menu-title">FAQ</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ url('pricing-table') }}">
-                        <div class="parent-icon"><i class="bx bx-diamond"></i>
-                        </div>
-                        <div class="menu-title">Pricing</div>
-                    </a>
-                </li>
-                <li class="menu-label">Charts & Maps</li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-line-chart"></i>
-                        </div>
-                        <div class="menu-title">Charts</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('charts-apex-chart') }}"><i class="bx bx-right-arrow-alt"></i>Apex</a>
-                        </li>
-                        <li> <a href="{{ url('charts-chartjs') }}"><i class="bx bx-right-arrow-alt"></i>Chartjs</a>
-                        </li>
-                        <li> <a href="{{ url('charts-highcharts') }}"><i class="bx bx-right-arrow-alt"></i>Highcharts</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-map-alt"></i>
-                        </div>
-                        <div class="menu-title">Maps</div>
-                    </a>
-                    <ul>
-                        <li> <a href="{{ url('map-google-maps') }}"><i class="bx bx-right-arrow-alt"></i>Google Maps</a>
-                        </li>
-                        <li> <a href="{{ url('map-vector-maps') }}"><i class="bx bx-right-arrow-alt"></i>Vector Maps</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu-label">Others</li>
-                <li>
-                    <a class="has-arrow" href="javascript:;">
-                        <div class="parent-icon"><i class="bx bx-menu"></i>
-                        </div>
-                        <div class="menu-title">Menu Levels</div>
-                    </a>
-                    <ul>
-                        <li> <a class="has-arrow" href="javascript:;"><i class="bx bx-right-arrow-alt"></i>Level One</a>
-                            <ul>
-                                <li> <a class="has-arrow" href="javascript:;"><i class="bx bx-right-arrow-alt"></i>Level Two</a>
-                                    <ul>
-                                        <li> <a href="javascript:;"><i class="bx bx-right-arrow-alt"></i>Level Three</a>
-                                        </li>
-                                    </ul>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="navbar-nav align-items-center flex-grow-1">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-home-alt'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Dashboard</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="{{ url('index') }}"><i class='bx bx-pie-chart-alt' ></i>Default</a></li>
+                              <li><a class="dropdown-item" href="{{ url('dashboard-alternate') }}"><i class='bx bx-shield-alt-2'></i>Alternate</a></li>
+                              <li><a class="dropdown-item" href="{{ url('dashboard-analytics') }}"><i class='bx bx-line-chart'></i>Graphical</a></li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-cube'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Apps & Pages</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="{{ url('app-emailbox') }}"><i class='bx bx-envelope'></i>Email</a></li>
+                              <li><a class="dropdown-item" href="{{ url('app-chat-box') }}"><i class='bx bx-conversation' ></i>Chat Box</a></li>
+                              <li><a class="dropdown-item" href="{{ url('app-file-manager') }}"><i class='bx bx-file' ></i>File Manager</a></li>
+                              <li><a class="dropdown-item" href="{{ url('app-contact-list') }}"><i class='bx bx-microphone' ></i>Contacts</a></li>
+                              <li><a class="dropdown-item" href="{{ url('app-to-do') }}"><i class='bx bx-check-shield'></i>Todo</a></li>
+                              <li><a class="dropdown-item" href="{{ url('app-invoice') }}"><i class='bx bx-printer' ></i>Invoice</a></li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-file'></i>Pages</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li class="nav-item dropend"><a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-radio-circle'></i>Error</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="{{ url('errors-404-error') }}"><i class='bx bx-radio-circle'></i>404 Error</a></li>
+                                            <li><a class="dropdown-item" href="{{ url('errors-500-error') }}"><i class='bx bx-radio-circle'></i>500 rror</a></li>
+                                            <li><a class="dropdown-item" href="{{ url('errors-coming-soon') }}"><i class='bx bx-radio-circle'></i>Coming Soon</a></li>
+                                            <li><a class="dropdown-item" href="{{ url('error-blank-page') }}"><i class='bx bx-radio-circle'></i>Blank Page</a></li>
+                                          </ul>
+                                    </li>
+                                    <li><a class="dropdown-item" href="{{ url('user-profile') }}"><i class='bx bx-radio-circle'></i>User Profile</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('timeline') }}"><i class='bx bx-radio-circle'></i>Timeline</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('faq') }}"><i class='bx bx-radio-circle'></i>FAQ</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('pricing-table') }}"><i class='bx bx-radio-circle'></i>Pricing</a></li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-message-square-edit'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Forms</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="{{ url('form-elements') }}"><i class='bx bx-message-square-dots'></i>Form Elements</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-input-group') }}"><i class='bx bx-book-content' ></i>Input Groups</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-radios-and-checkboxes') }}"><i class='bx bx-radio-circle-marked'></i>Radios & Checkboxes</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-layouts') }}"><i class='bx bx-layer'></i>Forms Layouts</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-validations') }}"><i class='bx bx-file-blank' ></i>Form Validation</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-wizard') }}"><i class='bx bx-glasses'></i>Form Wizard</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-text-editor') }}"><i class='bx bx-edit'></i>Text Editor</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-file-upload') }}"><i class='bx bx-upload'></i>File Upload</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-date-time-pickes') }}"><i class='bx bx-calendar-check' ></i>Date Pickers</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-select2') }}"><i class='bx bx-check-double'></i>Select2</a>
+                                </li>
+                                <li> <a class="dropdown-item" href="{{ url('form-repeater') }}"><i class='bx bx-directions'></i>Form Repeater</a>
                                 </li>
                             </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="https://codervent.com/rocker/documentation/" target="_blank">
-                        <div class="parent-icon"><i class="bx bx-folder"></i>
-                        </div>
-                        <div class="menu-title">Documentation</div>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://themeforest.net/user/codervent" target="_blank">
-                        <div class="parent-icon"><i class="bx bx-support"></i>
-                        </div>
-                        <div class="menu-title">Support</div>
-                    </a>
-                </li>
-            </ul>
-            <!--end navigation-->
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-lock'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Authentication</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-receipt'></i>Basic</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('auth-basic-signin') }}"><i class='bx bx-radio-circle'></i>Sign In</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-basic-signup') }}"><i class='bx bx-radio-circle'></i>Sign Up</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-basic-forgot-password') }}"><i class='bx bx-radio-circle'></i>Forgot Password</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-basic-reset-password') }}"><i class='bx bx-radio-circle'></i>Reset Password</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-cylinder'></i>Cover</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('auth-cover-signin') }}"><i class='bx bx-radio-circle'></i>Sign In</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-cover-signup') }}"><i class='bx bx-radio-circle'></i>Sign Up</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-cover-forgot-password') }}"><i class='bx bx-radio-circle'></i>Forgot Password</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-cover-reset-password') }}"><i class='bx bx-radio-circle'></i>Reset Password</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-aperture'></i>Header & Footer</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('auth-header-footer-signin') }}"><i class='bx bx-radio-circle'></i>Sign In</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-header-footer-signup') }}"><i class='bx bx-radio-circle'></i>Sign Up</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-header-footer-forgot-password') }}"><i class='bx bx-radio-circle'></i>Forgot Password</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('auth-header-footer-reset-password') }}"><i class='bx bx-radio-circle'></i>Reset Password</a></li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-briefcase-alt'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">UI Elements</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li> <a class="dropdown-item" href="{{ url('widgets') }}"><i class='bx bx-wine'></i>Widgets</a></li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-cart' ></i>eCommerce</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('ecommerce-products') }}"><i class='bx bx-radio-circle'></i>Products</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('ecommerce-products-details') }}"><i class='bx bx-radio-circle'></i>Product Details</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('ecommerce-add-new-products') }}"><i class='bx bx-radio-circle'></i>Add New Products</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('ecommerce-orders') }}"><i class='bx bx-radio-circle'></i>Orders</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-ghost'></i>Components</a>
+                                <ul class="dropdown-menu scroll-menu">
+                                    <li><a class="dropdown-item" href="{{ url('component-alerts') }}"><i class='bx bx-radio-circle'></i>Alerts</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-accordions') }}"><i class='bx bx-radio-circle'></i>Accordions</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-badges') }}"><i class='bx bx-radio-circle'></i>Badges</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-buttons') }}"><i class='bx bx-radio-circle'></i>Buttons</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-cards') }}"><i class='bx bx-radio-circle'></i>Cards</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-carousels') }}"><i class='bx bx-radio-circle'></i>Carousels</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-list-groups') }}"><i class='bx bx-radio-circle'></i>List Groups</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-media-object') }}"><i class='bx bx-radio-circle'></i>Media Objects</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-modals') }}"><i class='bx bx-radio-circle'></i>Modals</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-navs-tabs') }}"><i class='bx bx-radio-circle'></i>Navs & Tabs</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-navbar') }}"><i class='bx bx-radio-circle'></i>Navbar</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-paginations') }}"><i class='bx bx-radio-circle'></i>Pagination</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-popovers-tooltips') }}"><i class='bx bx-radio-circle'></i>Popovers & Tooltips</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-progress-bars') }}"><i class='bx bx-radio-circle'></i>Progress</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-spinners') }}"><i class='bx bx-radio-circle'></i>Spinners</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-notifications') }}"><i class='bx bx-radio-circle'></i>Notifications</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('component-avtars-chips') }}"><i class='bx bx-radio-circle'></i>Avatrs & Chips</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-card' ></i>Content</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('content-grid-system') }}"><i class='bx bx-radio-circle'></i>Grid System</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('content-typography') }}"><i class='bx bx-radio-circle'></i>Typography</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('content-text-utilities') }}"><i class='bx bx-radio-circle'></i>Text Utilities</a></li>
+                                  </ul>
+                              </li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-droplet' ></i>Icons</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('icons-line-icons') }}"><i class='bx bx-radio-circle'></i>Line Icons</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('icons-boxicons') }}"><i class='bx bx-radio-circle'></i>Boxicons</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('icons-feather-icons') }}"><i class='bx bx-radio-circle'></i>Feather Icons</a></li>
+                                  </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class='bx bx-line-chart'></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Charts</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="{{ url('charts-apex-chart') }}"><i class='bx bx-bar-chart-alt-2' ></i>Apex</a></li>
+                              <li><a class="dropdown-item" href="{{ url('charts-chartjs') }}"><i class='bx bx-line-chart'></i>Chartjs</a></li>
+                              <li><a class="dropdown-item" href="{{ url('charts-highcharts') }}"><i class='bx bx-pie-chart-alt'></i>HighCharts</a></li>
+                              <li class="nav-item dropend">
+                                <a class="dropdown-item dropdown-toggle dropdown-toggle-nocaret" href="javascript:;"><i class='bx bx-map-pin'></i>Maps</a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{ url('map-google-maps') }}"><i class='bx bx-radio-circle'></i>Google Maps</a></li>
+                                    <li><a class="dropdown-item" href="{{ url('map-vector-maps') }}"><i class='bx bx-radio-circle'></i>Vector Maps</a></li>
+                                 </ul>
+                              </li>
+                            </ul>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="javascript:;" data-bs-toggle="dropdown">
+                                <div class="parent-icon"><i class="bx bx-grid-alt"></i>
+                                </div>
+                                <div class="menu-title d-flex align-items-center">Tables</div>
+                                <div class="ms-auto dropy-icon"><i class='bx bx-chevron-down'></i></div>
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="{{ url('table-basic-table') }}"><i class='bx bx-table'></i>Basic Table</a></li>
+                              <li><a class="dropdown-item" href="{{ url('table-datatable') }}"><i class='bx bx-data' ></i>Data Table</a></li>
+                            </ul>
+                          </li>
+                      </ul>
+                    </div>
+                  </div>
+              </nav>
         </div>
-        <!--end sidebar wrapper -->

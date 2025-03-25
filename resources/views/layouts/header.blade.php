@@ -1,16 +1,21 @@
-<!--start header -->
+    <!--start header wrapper-->
+    <div class="header-wrapper">
         <header>
             <div class="topbar d-flex align-items-center">
                 <nav class="navbar navbar-expand gap-3">
-                    <div class="mobile-toggle-menu"><i class='bx bx-menu'></i>
+                    <div class="topbar-logo-header d-none d-lg-flex">
+                        <div class="">
+                            <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+                        </div>
+                        <div class="">
+                            <h4 class="logo-text">Rocker</h4>
+                        </div>
                     </div>
-
-                      <div class="position-relative search-bar d-lg-block d-none" data-bs-toggle="modal" data-bs-target="#SearchModal">
+                    <div class="mobile-toggle-menu d-block d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><i class='bx bx-menu'></i></div>
+                    <div class="position-relative search-bar d-lg-block d-none" data-bs-toggle="modal" data-bs-target="#SearchModal">
                         <input class="form-control px-5" disabled type="search" placeholder="Search">
                         <span class="position-absolute top-50 search-show ms-3 translate-middle-y start-0 top-50 fs-5"><i class='bx bx-search'></i></span>
                       </div>
-
-
                       <div class="top-menu ms-auto">
                         <ul class="navbar-nav align-items-center gap-1">
                             <li class="nav-item mobile-search-icon d-flex d-lg-none" data-bs-toggle="modal" data-bs-target="#SearchModal">
@@ -128,7 +133,7 @@
                                                   <img src="assets/images/app/figma.png" width="30" alt="">
                                               </div>
                                               <div class="app-name">
-                                                  <p class="mb-0 mt-1">Stack</p>
+                                                  <p class="mb-0 mt-1">Figma</p>
                                               </div>
                                               </div>
                                             </a>
@@ -188,7 +193,7 @@
                                                   <img src="assets/images/app/pinterest.png" width="30" alt="">
                                               </div>
                                               <div class="app-name">
-                                                  <p class="mb-0 mt-1">Photos</p>
+                                                  <p class="mb-0 mt-1">Pinterest</p>
                                               </div>
                                               </div>
                                             </a>
@@ -614,4 +619,5 @@
                 </nav>
             </div>
         </header>
-        <!--end header -->
+    </div>
+    <!-- Page wrapper end -->
