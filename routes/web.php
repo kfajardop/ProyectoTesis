@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CasoPenalEtapaController;
+use App\Http\Controllers\ContactoController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -25,6 +26,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::resource('caso-penal-etapas', CasoPenalEtapaController::class);
+Route::resource('contactos', ContactoController::class);
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
